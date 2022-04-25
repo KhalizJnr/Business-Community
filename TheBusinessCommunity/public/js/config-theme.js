@@ -16,16 +16,16 @@
 
 const HomepageApp = {
     //----------- 1. Slideshow -----------
-    theme_slideshow: function() {
-        UIkit.slideshow('.in-slideshow', {
-            autoplay: true,
-            autoplayInterval: 7000,
-            pauseOnHover: false,
-            animation: 'slide',
-            minHeight: 480,
-            maxHeight: 700
-        });
-    },
+    // theme_slideshow: function() {
+    //     UIkit.slideshow('.in-slideshow', {
+    //         autoplay: true,
+    //         autoplayInterval: 7000,
+    //         pauseOnHover: false,
+    //         animation: 'slide',
+    //         minHeight: 480,
+    //         maxHeight: 700
+    //     });
+    // },
     //---------- 2. Counter -----------
     theme_counter: function() {
         const counter = new counterUp({

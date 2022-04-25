@@ -24,7 +24,11 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet"> -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
 
     </head>
     <body>
@@ -58,7 +62,8 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li><a href="#">Markets</a></li>
+                              <li><a href="#">About</a></li>
+                              <!--   
                                 <li><a href="#">Company<i class="fas fa-chevron-down"></i></a>
                                     <div class="uk-navbar-dropdown">
                                         <ul class="uk-nav uk-navbar-dropdown-nav">
@@ -69,7 +74,7 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li><a href="#">Education</a></li>
+ -->                                <li><a href="#">Education</a></li>
                                 <li><a href="#">Resources<i class="fas fa-chevron-down"></i></a>
                                     <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
                                         <div class="uk-navbar-dropdown-grid uk-child-width-1-2" data-uk-grid>
@@ -96,8 +101,8 @@
                     </div>
                     <div class="uk-navbar-right">
                         <div class="uk-navbar-item uk-visible@m in-optional-nav">
-                            <a href="#" class="uk-button uk-button-primary uk-border-rounded">Create Account</a>
-                            <a href="signin.html" class="uk-button uk-button-text"><i class="fas fa-user-circle"></i></a>
+                            <a href="{{ route('register') }}" class="uk-button uk-button-primary uk-border-rounded">Create Account</a>
+                            <a href="{{ route('login') }}" class="uk-button uk-button-text"><i class="fas fa-user-circle"></i></a>
                         </div>
                     </div>
                 </div>
@@ -115,23 +120,23 @@
                             <div class="uk-grid-medium" data-uk-grid>
                                 <div class="uk-width-1-2@s">
                                     <div class="uk-overlay">
-                                        <h1>Success is not served LA CARTE,<br>it's a BUFFET.</h1>
-                                        <p class="uk-text-lead uk-visible@m">Trade forex, commodities, synthetic and stock indices from a single account</p>
-                                        <a href="#" class="uk-button uk-button-default uk-border-rounded uk-visible@s">Discover platform</a>
+                                        <h1 style="font-family: 'Questrial', sans-serif; font-weight: bolder;">Opportunities don’t happen, you create them.</h1>
+                                        <p class="uk-text-lead uk-visible@m">Walk with me let’s create generational wealth. Welcome to GREATNESS.</p>
+                                        <a href="{{ route('register') }}" class="uk-button uk-button-default uk-border-rounded uk-visible@s">create account</a>
                                     </div>
                                 </div>
                                 <div class="uk-width-1-2@s">
-                                    <img class="in-slide-img" src="{{ asset('img/in-lazy.gif') }}" data-src="img/in-liquid-slide-1.svg" alt="image-slide" width="500" height="400" data-uk-img>
+                                    <img class="in-slide-img" src="{{ asset('img/in-lazy.gif') }}" data-src="img/in-liquid-slide-1.svg" alt="image-slide" width="500" hcd Documentseight="400" data-uk-img>
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class="uk-container">
+                        <!-- <div class="uk-container">
                             <div class="uk-grid-medium" data-uk-grid>
                                 <div class="uk-width-1-2@s">
                                     <div class="uk-overlay">
-                                        <h1>Multi-regulated global broker.</h1>
+                                        <h1>If opportunity doesn't knock, build a door.</h1>
                                         <p class="uk-text-lead uk-visible@m">A trusted destination for traders worldwide, Authorised by FCA, ASIC &amp; FSCA</p>
                                         <a href="#" class="uk-button uk-button-default uk-border-rounded uk-visible@s">Discover accounts</a>
                                     </div>
@@ -140,14 +145,14 @@
                                     <img class="in-slide-img" src="{{ asset('img/in-lazy.gif') }}" data-src="img/in-liquid-slide-2.svg" alt="image-slide" width="500" height="400" data-uk-img>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </li>
                 </ul>
-                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" data-uk-slidenav-previous data-uk-slideshow-item="previous"></a>
+                <!-- <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" data-uk-slidenav-previous data-uk-slideshow-item="previous"></a>
                 <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" data-uk-slidenav-next data-uk-slideshow-item="next"></a>
-                <div class="uk-section uk-padding-remove-vertical in-slideshow-features uk-visible@m">
+ -->                <div class="uk-section uk-padding-remove-vertical in-slideshow-features uk-visible@m">
                     <div class="uk-container">
-                        <ul class="uk-grid uk-child-width-1-5@m uk-text-center" data-uk-grid>
+                        <!-- <ul class="uk-grid uk-child-width-1-5@m uk-text-center" data-uk-grid>
                             <li>
                                 <img src="{{ asset('img/in-lazy.gif') }}" data-src="img/in-liquid-ticker-1.svg" alt="ticker-image" data-width data-height data-uk-img>
                                 <span class="uk-label uk-label-success uk-margin-left"><i class="fas fa-caret-up"></i>1,740.05</span>
@@ -163,11 +168,11 @@
                             <li>
                                 <img src="{{ asset('img/in-lazy.gif') }}" data-src="img/in-liquid-ticker-4.svg" alt="ticker-image" data-width data-height data-uk-img>
                                 <span class="uk-label uk-label-success uk-margin-left"><i class="fas fa-caret-up"></i>3,218.51</span>
-                            </li>
-                            <li>
+                            </li> -->
+                           <!--  <li>
                                 <img src="{{ asset('img/in-lazy.gif') }}" data-src="img/in-liquid-ticker-5.svg" alt="ticker-image" data-width data-height data-uk-img>
                                 <span class="uk-label uk-label-danger uk-margin-left"><i class="fas fa-caret-down"></i>735.11</span>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -179,12 +184,13 @@
             <div class="uk-container uk-light">
                 <div class="uk-grid uk-flex uk-flex-middle">
                     <div class="uk-width-1-2@m">
-                        <h2>Save time. Get <span class="in-highlight">higher return</span>. Multiply wealth.</h2>
+                        <h2 style="font-size: 20px ; font-family: 'Questrial', sans-serif">The business community is founded by <span class="in-highlight">Samuel Asiegbu Grasik</span>. Who is also the CEO of <span class="in-highlight">Grasikz Trading Academy </span>focused on building and equipping young entrepreneurs into financial freedom from our courses with powerful business pdfs as bonus.</h2>
                     </div>
+
                     <div class="uk-width-1-2@m">
-                        <a class="uk-button uk-button-default uk-border-rounded uk-align-right@m" href="#">Find out more<i class="fas fa-angle-right uk-margin-small-left"></i></a>
+                        <span class=" uk-align-right@m" href="#">Find out more<i class="fas fa-angle-down uk-margin-small-left"></i></span>
                     </div>
-                </div>
+                                    </div>
                 <div class="uk-child-width-1-3@m" data-uk-grid>
                     <div>
                         <div class="uk-card uk-card-secondary uk-border-rounded uk-cover-container">
@@ -192,7 +198,7 @@
                                 <img src="{{ asset('img/in-lazy.gif') }}" data-src="img/in-liquid-object-1.svg" alt="sample-image" data-width data-height data-uk-img>
                             </div>
                             <div class="uk-card-body">
-                                <h3>Various assets</h3>
+                                <h3>GRASIKZ BUSINESS COURSES</h3>
                                 <p>Duis aute irure dolor in reprehen derit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                             </div>
                         </div>
@@ -203,7 +209,7 @@
                                 <img src="{{ asset('img/in-lazy.gif') }}" data-src="img/in-liquid-object-2.svg" alt="sample-image" data-width data-height data-uk-img>
                             </div>
                             <div class="uk-card-body">
-                                <h3>Market analysis</h3>
+                                <h3>GRASIKZ TRADING ACADEMY COURSES</h3>
                                 <p>Duis aute irure dolor in reprehen derit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                             </div>
                         </div>
@@ -214,7 +220,7 @@
                                 <img src="{{ asset('img/in-lazy.gif') }}" data-src="img/in-liquid-object-3.svg" alt="sample-image" data-width data-height data-uk-img>
                             </div>
                             <div class="uk-card-body">
-                                <h3>Enhanced tools</h3>
+                                <h3>THE VOID IN YOUR TRADING</h3>
                                 <p>Duis aute irure dolor in reprehen derit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                             </div>
                         </div>
@@ -223,69 +229,81 @@
             </div>
         </div>
         <!-- section content end -->
-        <!-- section content begin -->
+       <!-- section content begin -->
         <div class="uk-section in-liquid-2">
             <div class="uk-container">
                 <div class="uk-grid-large uk-child-width-1-2@m" data-uk-grid>
                     <div class="uk-flex uk-flex-left">
-                        <div class="uk-margin-right">
+                        <!-- <div class="uk-margin-right">
                             <img src="{{ asset('img/in-lazy.gif') }}" data-src="img/in-liquid-icon-1.svg" alt="sample-icon" width="128" height="128" data-uk-img>
-                        </div>
-                        <div>
+                        </div> -->
+                        <!-- <div>
                             <h3>Expert service</h3>
                             <p>Quis autem vel eum iure reprehenderit qui in voluptate velit esse quam nihil molestiae consequatur.</p>
                             <a class="uk-button uk-button-text" href="#">Learn more<i class="fas fa-long-arrow-alt-right uk-margin-small-left"></i></a>
                         </div>
-                    </div>
+ -->                    </div>
                     <div class="uk-flex uk-flex-left">
-                        <div class="uk-margin-right">
+                        <!-- <div class="uk-margin-right">
                             <img src="{{ asset('img/in-lazy.gif') }}" data-src="img/in-liquid-icon-2.svg" alt="sample-icon" width="128" height="128" data-uk-img>
-                        </div>
-                        <div>
+                        </div> -->
+                        <!-- <div>
                             <h3>Fully regulated</h3>
                             <p>Quis autem vel eum iure reprehenderit qui in voluptate velit esse quam nihil molestiae consequatur.</p>
                             <a class="uk-button uk-button-text" href="#">Learn more<i class="fas fa-long-arrow-alt-right uk-margin-small-left"></i></a>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="uk-flex uk-flex-left">
-                        <div class="uk-margin-right">
+                       <!--  <div class="uk-margin-right">
                             <img src="{{ asset('img/in-lazy.gif') }}" data-src="img/in-liquid-icon-3.svg" alt="sample-icon" width="128" height="128" data-uk-img>
-                        </div>
-                        <div>
+                        </div> -->
+                        <!-- <div>
                             <h3>Financial strength</h3>
                             <p>Quis autem vel eum iure reprehenderit qui in voluptate velit esse quam nihil molestiae consequatur.</p>
                             <a class="uk-button uk-button-text" href="#">Learn more<i class="fas fa-long-arrow-alt-right uk-margin-small-left"></i></a>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="uk-flex uk-flex-left">
-                        <div class="uk-margin-right">
+                        <!-- <div class="uk-margin-right">
                             <img src="{{ asset('img/in-lazy.gif') }}" data-src="img/in-liquid-icon-4.svg" alt="sample-icon" width="128" height="128" data-uk-img>
-                        </div>
-                        <div>
+                        </div> -->
+<!--                         <div>
                             <h3>Integrated support</h3>
                             <p>Quis autem vel eum iure reprehenderit qui in voluptate velit esse quam nihil molestiae consequatur.</p>
                             <a class="uk-button uk-button-text" href="#">Learn more<i class="fas fa-long-arrow-alt-right uk-margin-small-left"></i></a>
-                        </div>
+                        </div> -->
                     </div>
-                </div>
+                 </div>
                 <div class="uk-grid uk-flex uk-flex-center">
                     <div class="uk-width-5-6@m uk-margin-medium-top">
-                        <div class="uk-card uk-card-default uk-card-body uk-background-contain uk-background-top-left" style="background-image: url(img/in-liquid-card-bg.png);" data-uk-img>
+                        <div class="uk-card uk-card-default uk-card-body uk-background-contain uk-background-top-left" style="background-image: url(/img/in-liquid-card-bg.png);" data-uk-img>
                             <div class="uk-grid uk-child-width-1-3@s uk-child-width-1-3@m uk-text-center" data-uk-grid>
                                 <div class="uk-width-1-1">
-                                    <h4><span>Simple steps to start trade.</span></h4>
+                                    <h4><span style="font-family: 'Questrial', sans-serif; font-weight: bolder;">Why 'The Business Community' ?</span></h4>
                                 </div>
                                 <div>
                                     <span class="in-icon-wrap circle">1</span>
-                                    <p>Register account</p>
+                                    <p>Learn at your own pace and access learning materials anywhere.</p>
                                 </div>
                                 <div>
                                     <span class="in-icon-wrap circle">2</span>
-                                    <p>Fund your account</p>
+                                    <p>HustleHearted Series podcasts.</p>
                                 </div>
                                 <div>
                                     <span class="in-icon-wrap circle">3</span>
-                                    <p>Start your trade</p>
+                                    <p>Lifetime membership.</p>
+                                </div>
+                                <div>
+                                    <span class="in-icon-wrap circle">4</span>
+                                    <p>Trade ideas and setups.</p>
+                                </div>
+                                <div>
+                                    <span class="in-icon-wrap circle">5</span>
+                                    <p>Join community of actively profitable traders.</p>
+                                </div>
+                                <div>
+                                    <span class="in-icon-wrap circle">6</span>
+                                    <p>Personal Growth, Health, Mindset (shift) and many more…</p>
                                 </div>
                             </div>
                         </div>
@@ -304,21 +322,22 @@
                                 <img src="{{ asset('img/in-lazy.gif') }}" data-src="img/in-liquid-3-mockup.png" alt="sample-images" width="650" height="469" data-uk-img>
                             </div>
                             <div class="uk-width-1-2@m">
-                                <span class="uk-label in-liquid-label uk-margin-bottom">Available on multiple platform</span>
-                                <h2 class="uk-margin-remove">World class platform<br>trade without a doubt.</h2>
-                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+                                <span class="uk-label in-liquid-label uk-margin-bottom">Available on multiple platforms</span>
+                                <h2 class="uk-margin-remove" style="font-size: 20px ; font-family: 'Questrial', sans-serif">World class trade<br>classes without a doubt.</h2>
+                                <p>Need help?.We're on several social-media platforms.</p>
                                 <div class="uk-grid-small uk-child-width-1-3 uk-child-width-1-4@m uk-margin-medium-top uk-text-center" data-uk-grid>
                                     <div>
-                                        <i class="fab fa-apple in-icon-wrap"></i>
-                                        <p class="uk-text-small">MacOS</p>
+                                        <i class="fab fa-facebook in-icon-wrap"></i>
+                                        <!-- <i class="fa-brands fa-facebook in-icon-wrap"></i> -->
+                                        <p class="uk-text-small">Facebook</p>
                                     </div>
                                     <div>
-                                        <i class="fab fa-windows in-icon-wrap"></i>
-                                        <p class="uk-text-small">Windows</p>
+                                        <i class="fab fa-whatsapp in-icon-wrap"></i>
+                                        <p class="uk-text-small">Whatsapp</p>
                                     </div>
                                     <div>
-                                        <i class="fab fa-google-play in-icon-wrap"></i>
-                                        <p class="uk-text-small">Android</p>
+                                        <i class="fab fa-youtube in-icon-wrap"></i>
+                                        <p class="uk-text-small">Youtube</p>
                                     </div>
                                 </div>
                             </div>
@@ -331,16 +350,16 @@
         <!-- section content begin -->
         <div class="uk-section in-liquid-4">
             <div class="uk-container">
-                <div class="uk-grid uk-flex uk-flex-middle">
+                <!-- <div class="uk-grid uk-flex uk-flex-middle">
                     <div class="uk-width-1-2@m">
                         <h2>Stay ahead of the curved.</h2>
                     </div>
                     <div class="uk-width-1-2@m uk-visible@m">
                         <a class="uk-button uk-button-text uk-align-right@m" href="#">Show all<i class="fas fa-angle-right uk-margin-small-left"></i></a>
                     </div>
-                </div>
+                </div> -->
                 <div class="uk-grid uk-child-width-1-2@s uk-child-width-1-3@m in-blog-4" data-uk-grid>
-                    <div class="uk-flex uk-flex-left">
+                   <!--  <div class="uk-flex uk-flex-left">
                         <div class="in-liquid-category">
                             <p class="uk-text-small uk-text-uppercase"><span>News</span></p>
                         </div>
@@ -358,8 +377,8 @@
                                 <a class="uk-button uk-button-text uk-margin-top" href="#">Read more<i class="fas fa-long-arrow-alt-right uk-margin-small-left"></i></a>
                             </article>
                         </div>
-                    </div>
-                    <div class="uk-flex uk-flex-left">
+                    </div> -->
+                   <!--  <div class="uk-flex uk-flex-left">
                         <div class="in-liquid-category">
                             <p class="uk-text-small uk-text-uppercase"><span>Analysis</span></p>
                         </div>
@@ -377,12 +396,12 @@
                                 <a class="uk-button uk-button-text uk-margin-top" href="#">Read more<i class="fas fa-long-arrow-alt-right uk-margin-small-left"></i></a>
                             </article>
                         </div>
-                    </div>
-                    <div class="uk-flex uk-flex-left uk-visible@m">
+                    </div> -->
+                    <!-- <div class="uk-flex uk-flex-left uk-visible@m">
                         <div class="in-liquid-category">
                             <p class="uk-text-small uk-text-uppercase"><span>Education</span></p>
-                        </div>
-                        <div>
+                        </div> -->
+                       <!--  <div>
                             <article class="uk-article">
                                 <h5 class="uk-margin-remove-bottom">
                                     <a href="#">How Can You Use Volatility to Your Advantage</a>
@@ -395,10 +414,10 @@
                                 <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit ...</p>
                                 <a class="uk-button uk-button-text uk-margin-top" href="#">Read more<i class="fas fa-long-arrow-alt-right uk-margin-small-left"></i></a>
                             </article>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
-                <div class="uk-grid uk-flex uk-flex-center">
+               <!--  <div class="uk-grid uk-flex uk-flex-center">
                     <div class="uk-width-5-6@m uk-inline">
                         <div class="uk-grid-medium uk-child-width-1-3@s uk-child-width-1-4@m uk-text-center uk-margin-medium-top" data-uk-grid>
                             <div>
@@ -412,7 +431,7 @@
                                 <p class="uk-text-small uk-margin-remove-top">Forex EXPO Dubai 2020</p>
                             </div>
                             <div>
-                                <img src="{{ asset('img/in-lazy.gif') }}" data-src="img/in-liquid-award.svg" alt="wave-award" width="71" height="58" data-uk-img>
+                                 <img src="{{ asset('img/in-lazy.gif') }}" data-src="img/in-liquid-award.svg" alt="wave-award" width="71" height="58" data-uk-img>
                                 <h6 class="uk-margin-small-top uk-margin-remove-bottom">Best Trading Platform</h6>
                                 <p class="uk-text-small uk-margin-remove-top">London Summit 2020</p>
                             </div>
@@ -423,7 +442,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --> -->
             </div>
         </div>
         <!-- section content end -->
@@ -456,12 +475,12 @@
                             </div>
                         </div>
                         <div class="uk-text-center uk-text-small in-border-text">
-                            <p><span>Don't see a payment methods that works for you?<br class="uk-hidden@m"> We have other options.<br class="uk-hidden@m"> <a class="uk-button uk-button-small uk-button-primary uk-border-rounded uk-margin-left" href="#">More options<i class="fas fa-angle-right uk-margin-small-left"></i></a></span></p>
+                            <p><span>Don't see a payment methods that works for you?<br class="uk-hidden@m"> We have other options.<br class="uk-hidden@m"> <a class="uk-button uk-button-small uk-button-primary uk-border-rounded uk-margin-left" href="#">More options<i class="fab fa-whatsapp uk-margin-small-left"></i></a></span></p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- section content end -->
     </main>
     <footer>
